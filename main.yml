@@ -61,10 +61,11 @@
         name: "{{ item }}"
         state: present
       with_items: 
+        - libpq-dev
         - expect
-        - postgresql
-        - postgresql-client
-        - postgresql-contrib
+        - postgresql-11
+        - postgresql-client-11
+        - postgresql-contrib-11
         - python-pip
 
     - name: Install psycopg2 python package
